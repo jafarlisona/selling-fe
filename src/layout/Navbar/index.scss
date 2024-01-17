@@ -1,0 +1,42 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 10;
+  .navbar {
+    height: 70px;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      h1 {
+        color: #000;
+        font-weight: 900;
+        font-size: 40px;
+        span {
+          color: #f16821;
+        }
+      }
+    }
+    .pages {
+      display: flex;
+      gap: 30px;
+      a {
+        color: #000;
+        font-size: 16px;
+        &:hover {
+          color: #f16821;
+        }
+      }
+      .active {
+        color: #f16821;
+      }
+    }
+  }
+}

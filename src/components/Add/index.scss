@@ -1,0 +1,137 @@
+#add {
+  padding: 100px 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    max-width: 1250px;
+    margin: 0 auto;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      .form {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        label {
+          font-weight: 600;
+          color: #000;
+        }
+        .field {
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 300px;
+            outline: none;
+            border: 1px solid #ddd;
+            height: 40px;
+            padding-left: 10px;
+            &:focus {
+              border: 1px solid #f16821;
+            }
+            &::placeholder {
+              font-style: italic;
+              font-size: 13px;
+              color: #808080;
+            }
+          }
+          span {
+            color: #f23a2e;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 5px 10px;
+          }
+          textarea {
+            width: 300px;
+            outline: none;
+            border: 1px solid #ddd;
+            height: 120px;
+            padding-left: 10px;
+            &:focus {
+              border: 1px solid #f16821;
+            }
+            &::placeholder {
+              font-style: italic;
+              font-size: 13px;
+              color: #808080;
+            }
+          }
+        }
+      }
+      button {
+        width: 130px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: #000;
+        text-transform: uppercase;
+        color: white;
+        line-height: 18px;
+        font-weight: bolder;
+        transition: all 300ms;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          color: #000;
+        }
+      }
+    }
+    .table {
+      input {
+        width: 300px;
+        outline: none;
+        border: 1px solid #ddd;
+        height: 40px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+        &:focus {
+          border: 1px solid #f16821;
+        }
+        &::placeholder {
+          font-style: italic;
+          font-size: 13px;
+          color: #808080;
+        }
+      }
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        thead {
+          border: 2px solid black;
+          height: 50px;
+          tr {
+            th {
+              border: 2px solid black;
+              padding: 0px 70px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            border: 2px solid black;
+            td {
+              padding: 0px 30px;
+              border: 2px solid black;
+              text-align: center;
+              color: #808080;
+              img {
+                object-fit: cover;
+                object-position: center;
+              }
+              i {
+                transition: all 300ms;
+                display: block;
+                text-align: center;
+                color: #000;
+                &:hover {
+                  color: #f23a2e;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

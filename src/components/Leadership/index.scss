@@ -1,0 +1,77 @@
+#leadership {
+  padding: 80px 0;
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    h4 {
+      line-height: 17px;
+      letter-spacing: 2.6px;
+      font-size: 14px;
+      color: #adb5bd;
+      text-align: center;
+    }
+    h1 {
+      line-height: 48px;
+      font-size: 40px;
+      text-align: center;
+      font-weight: 900;
+    }
+    .team-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      padding: 50px 0;
+      .card {
+        .img {
+          img {
+            width: 265px;
+            height: 265px;
+            object-fit: cover;
+            object-position: center;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+        .content {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+          .name {
+            line-height: 27px;
+            color: #808080;
+            font-size: 18px;
+          }
+          span {
+            color: #ccc;
+            font-size: 15px;
+          }
+          p {
+            color: #808080;
+            line-height: 27px;
+            text-align: center;
+          }
+          .medias {
+            i {
+              font-size: 13px;
+              line-height: 30px;
+              height: 30px;
+              width: 30px;
+              display: inline-block;
+              text-align: center;
+              border-radius: 50%;
+              background-color: #777;
+              transition: 400ms all;
+              color: white;
+              margin: 0 5px;
+              &:hover {
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
